@@ -2,158 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KELLY BRIGGS CONSULTING</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly Briggs Consulting</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #111;
     }
+
     header {
-      background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
-      color: white;
-      padding: 40px 20px;
+      background: url('https://images.unsplash.com/photo-1604014238252-0bbed3f2b46a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80') no-repeat center center/cover;
+      height: 100vh;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: space-between;
-      flex-wrap: wrap;
+      padding: 40px 60px;
+      color: white;
+      position: relative;
     }
+
     .logo {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .logo img {
-      width: 50px;
-      height: 50px;
-    }
-    .logo h1 {
       font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .contact-button {
+      background-color: gold;
+      color: #111;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      align-self: flex-end;
+    }
+
+    .hero-text {
+      max-width: 400px;
+      margin-top: auto;
+      margin-bottom: 100px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8rem;
       margin: 0;
     }
-    .contact-info {
-      font-size: 0.95rem;
-      color: #ccc;
-      text-align: right;
-    }
-    .hero {
-      text-align: center;
-    }
-    .hero img {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
+
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      border-radius: 15px;
-      margin-top: 40px;
-      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
-    }
-    section h2 {
-      color: #1a1a1a;
-      margin-bottom: 20px;
-      font-size: 2rem;
-      border-left: 5px solid gold;
-      padding-left: 10px;
-    }
-    ul {
-      text-align: left;
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.8;
-    }
-    .map {
-      width: 100%;
-      height: 350px;
-      margin-top: 20px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .cta-button {
-      display: inline-block;
-      background-color: gold;
-      color: black;
-      padding: 12px 30px;
-      margin-top: 20px;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #e0b800;
-    }
-    footer {
-      background: #1a1a1a;
-      color: #aaa;
+      padding: 60px 30px;
       text-align: center;
-      padding: 30px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .values {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .value-item {
+      max-width: 150px;
+    }
+
+    .value-item img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .services img {
+      width: 250px;
+      border-radius: 16px;
+      transform: rotate(-2deg);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+    }
+
+    .services img:hover {
+      transform: scale(1.05) rotate(0deg);
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
       margin-top: 60px;
+    }
+
+    .socials {
+      margin: 20px 0;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: gold;
+      text-decoration: none;
+      font-size: 1.4rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">
-    <img src="https://cdn-icons-png.flaticon.com/512/2739/2739878.png" alt="Logo">
-    <h1>KELLY BRIGGS CONSULTING</h1>
-  </div>
-  <div class="contact-info">
-    📧 briggs@kellyconsult.in.net<br/>
-    📞 509-825-3066
+  <div class="logo">KELLY BRIGGS CONSULTING</div>
+  <a href="mailto:briggs@kellyconsult.in.net" class="contact-button">CONTACT US</a>
+  <div class="hero-text">
+    <h1>Kelly Briggs Consulting</h1>
   </div>
 </header>
 
-<section class="hero">
-  <img src="https://images.unsplash.com/photo-1604014238252-0bbed3f2b46a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80" alt="Office VIP Banner">
-</section>
-
 <section>
   <h2>Who We Are</h2>
-  <p>KELLY BRIGGS CONSULTING, INC. is a high-end consulting firm based in Sherman Oaks, California. We focus on executive strategy, growth consulting, and business excellence for top-tier clients worldwide.</p>
+  <p>Kelly Briggs Consulting, Inc, is a premier firm specializing in strategic guidance and business transformation. We are committed to fostering leadership and growth.</p>
+  <div class="values">
+    <div class="value-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/2717/2717504.png" alt="Insightful">
+      <div>Insightful</div>
+    </div>
+    <div class="value-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Growth">
+      <div>Growth-Oriented</div>
+    </div>
+    <div class="value-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/2872/2872377.png" alt="Professional">
+      <div>Professional</div>
+    </div>
+  </div>
 </section>
 
 <section>
   <h2>Our Services</h2>
-  <ul>
-    <li>Corporate Strategy</li>
-    <li>Financial Consulting</li>
-    <li>Executive Advisory</li>
-    <li>Leadership Coaching</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Contact Us</h2>
-  <p>Email: briggs@kellyconsult.in.net</p>
-  <p>Phone: 509-825-3066</p>
-  <p>Address: 4710 ALLOTT AVENUE, SHERMAN OAKS, CA 91423</p>
-  <a href="mailto:briggs@kellyconsult.in.net" class="cta-button">Get In Touch</a>
-</section>
-
-<section>
-  <h2>Find Us</h2>
-  <div class="map">
-    <iframe src="https://www.google.com/maps?q=Sherman+Oaks,+CA&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="services">
+    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a6c8da3?auto=format&fit=crop&w=600&q=80" alt="Service 1">
+    <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=600&q=80" alt="Service 2">
+    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?auto=format&fit=crop&w=600&q=80" alt="Service 3">
   </div>
 </section>
 
-<section>
-  <h2>Coming Soon</h2>
-  <p>New executive tools, strategic dashboards, and VIP portals are launching soon. Stay connected.</p>
-</section>
-
 <footer>
-  &copy; 2025 KELLY BRIGGS CONSULTING, INC. — All rights reserved.  
+  <div class="socials">
+    <a href="#">🔗</a>
+    <a href="#">🐦</a>
+    <a href="#">📘</a>
+    <a href="#">📸</a>
+  </div>
+  <div>&copy; 2025 Kelly Briggs Consulting, Inc.</div>
 </footer>
 
 </body>
