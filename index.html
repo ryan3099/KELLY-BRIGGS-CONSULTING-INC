@@ -5,56 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KELLY BRIGGS CONSULTING</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f5f5f5;
       color: #333;
-      overflow-x: hidden;
     }
-
     header {
       background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
       color: white;
-      padding: 60px 20px 40px;
-      text-align: center;
-      position: relative;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-
     .logo {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: gold;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
-
-    header p {
-      font-size: 1rem;
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    .logo h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .contact-info {
+      font-size: 0.95rem;
       color: #ccc;
+      text-align: right;
     }
-
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
     section {
       padding: 60px 20px;
       max-width: 1000px;
-      margin: 50px auto;
+      margin: auto;
       background: white;
       border-radius: 15px;
+      margin-top: 40px;
       box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeIn 1s forwards;
     }
-
-    section:nth-child(even) {
-      animation-delay: 0.2s;
-    }
-
     section h2 {
       color: #1a1a1a;
       margin-bottom: 20px;
@@ -62,22 +64,12 @@
       border-left: 5px solid gold;
       padding-left: 10px;
     }
-
-    .hero img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-height: 500px;
-      object-fit: cover;
-    }
-
     ul {
       text-align: left;
       max-width: 600px;
       margin: auto;
       line-height: 1.8;
     }
-
     .map {
       width: 100%;
       height: 350px;
@@ -85,61 +77,58 @@
       border-radius: 10px;
       overflow: hidden;
     }
-
+    .cta-button {
+      display: inline-block;
+      background-color: gold;
+      color: black;
+      padding: 12px 30px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #e0b800;
+    }
     footer {
       background: #1a1a1a;
       color: #aaa;
       text-align: center;
       padding: 30px 20px;
-    }
-
-    .social {
-      margin-top: 15px;
-    }
-
-    .social a {
-      color: gold;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 1.1rem;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 768px) {
-      header .logo { font-size: 2rem; }
-      section { margin: 20px; }
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">KBC CONSULTING</div>
-  <p>📧 briggs@kellyconsult.in.net &nbsp;&nbsp;&nbsp; 📞 509-825-3066</p>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/2739/2739878.png" alt="Logo">
+    <h1>KELLY BRIGGS CONSULTING</h1>
+  </div>
+  <div class="contact-info">
+    📧 briggs@kellyconsult.in.net<br/>
+    📞 509-825-3066
+  </div>
 </header>
 
 <section class="hero">
-  <img src="https://images.unsplash.com/photo-1604014238252-0bbed3f2b46a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80" alt="Luxury Office Banner">
+  <img src="https://images.unsplash.com/photo-1604014238252-0bbed3f2b46a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1380&q=80" alt="Office VIP Banner">
 </section>
 
 <section>
   <h2>Who We Are</h2>
-  <p>KELLY BRIGGS CONSULTING, INC. is a premium-level consulting agency specializing in business excellence, C-level advisory, and corporate strategy. Based in Sherman Oaks, CA, we serve clients globally.</p>
+  <p>KELLY BRIGGS CONSULTING, INC. is a high-end consulting firm based in Sherman Oaks, California. We focus on executive strategy, growth consulting, and business excellence for top-tier clients worldwide.</p>
 </section>
 
 <section>
   <h2>Our Services</h2>
   <ul>
-    <li>Executive Strategy Consulting</li>
-    <li>Financial Growth Analysis</li>
-    <li>Leadership Advisory</li>
-    <li>Board & Governance Consulting</li>
+    <li>Corporate Strategy</li>
+    <li>Financial Consulting</li>
+    <li>Executive Advisory</li>
+    <li>Leadership Coaching</li>
   </ul>
 </section>
 
@@ -148,6 +137,7 @@
   <p>Email: briggs@kellyconsult.in.net</p>
   <p>Phone: 509-825-3066</p>
   <p>Address: 4710 ALLOTT AVENUE, SHERMAN OAKS, CA 91423</p>
+  <a href="mailto:briggs@kellyconsult.in.net" class="cta-button">Get In Touch</a>
 </section>
 
 <section>
@@ -159,16 +149,11 @@
 
 <section>
   <h2>Coming Soon</h2>
-  <p>We are launching premium business toolkits, data platforms, and private consulting portals. Stay tuned for elite resources.</p>
+  <p>New executive tools, strategic dashboards, and VIP portals are launching soon. Stay connected.</p>
 </section>
 
 <footer>
-  &copy; 2025 KELLY BRIGGS CONSULTING, INC.<br>
-  <div class="social">
-    <a href="mailto:briggs@kellyconsult.in.net">Email</a> |
-    <a href="tel:+15098253066">Call</a> |
-    <a href="#">LinkedIn</a>
-  </div>
+  &copy; 2025 KELLY BRIGGS CONSULTING, INC. — All rights reserved.  
 </footer>
 
 </body>
